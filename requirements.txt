@@ -1,0 +1,12 @@
+# --- Core Dependencies ---
+# Sympy is required for prime number generation, 
+# modular inverse calculations, and the Extended Euclidean Algorithm.
+sympy>=1.12
+
+# --- Security & Cryptography ---
+# Used for cryptographically secure random number generation (secrets module).
+cryptography>=42.0.0
+
+# --- Development & Quality Assurance (Optional) ---
+# pytest>=8.0.0
+# black>=24.1.0
