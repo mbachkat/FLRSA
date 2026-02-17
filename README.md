@@ -58,7 +58,7 @@ Instead of calculating $c^d \pmod n$, which requires $O(\log d)$ modular multipl
 | **Operation** | Modular Exponentiation | Polynomial Dot Product |
 | **Complexity** | $O(\log d)$ multiplications | $O(1)$ fixed operations |
 | **Computational Cost** | ~3000 modular mult. (2048-bit) | **< 10 modular mult.** |
-| **Hardware Target** | High-performance CPUs | **Ultra-lightweight IoT / HSM/ Embedded System** |
+| **Hardware Target** | High-performance CPUs | **Ultra-lightweight : IoT / HSM / Embedded System** |
 
 ---
 
