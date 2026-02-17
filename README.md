@@ -75,3 +75,19 @@ FLRSA/
 ├── test.py            # 1024-bit validation suite
 └── LICENSE            # MIT License terms
 
+## ⚠️ Security Disclaimer
+This project is a **Proof of Concept (PoC)** demonstrating a novel mathematical approach to modular reduction. While the speedup is significant, the cryptographic security of using a pivot exponent $d_0$ related to combinatorial pivots has not been fully audited against lattice-based cryptanalysis (e.g., Coppersmith's attacks). **Do not use this in production environments.** It is intended for research and educational purposes only.
+
+---
+
+## 📜 License
+This project is licensed under the **MIT License**. 
+
+Copyright (c) 2026 mbachkat
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
