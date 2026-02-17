@@ -1,9 +1,6 @@
 # FLRSA
-FLRSA : Fast &amp; Light RSA implementation based on Stirling numbers (Matrix B) and Pascal's Triangle. Accelerates decryption by replacing modular exponentiation with a combinatorial dot product.
+FLRSA : Fast & Light RSA implementation based on Stirling numbers (Matrix B) and Pascal's Triangle. Accelerates decryption by replacing modular exponentiation with a combinatorial dot product.
 
-Here is a professional, high-impact **README.md** in English, specifically tailored for a GitHub repository. It bridges the gap between your mathematical discovery and the practical implementation.
-
----
 
 # FLRSA: Fast & Light RSA
 
