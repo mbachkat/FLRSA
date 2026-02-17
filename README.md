@@ -62,19 +62,6 @@ Instead of calculating $c^d \pmod n$, which requires $O(\log d)$ modular multipl
 
 ---
 
-## 🛠️ Project Structure
-
-```text
-FLRSA/
-├── src/
-│   ├── __init__.py    # Python package marker
-│   ├── keygen.py      # Generation of d0, B2, and modular constants
-│   ├── cipher.py      # Standard RSA encryption (e=65537)
-│   └── decipher.py    # Combinatorial dot product decryption
-├── requirements.txt   # Dependencies (sympy)
-├── test.py            # 1024-bit validation suite
-└── LICENSE            # MIT License terms
-
 ## ⚠️ Security Disclaimer
 This project is a **Proof of Concept (PoC)** demonstrating a novel mathematical approach to modular reduction. While the speedup is significant, the cryptographic security of using a pivot exponent $d_0$ related to combinatorial pivots has not been fully audited against lattice-based cryptanalysis (e.g., Coppersmith's attacks). **Do not use this in production environments.** It is intended for research and educational purposes only.
 
@@ -91,3 +78,19 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+
+## 🛠️ Project Structure
+
+```text
+FLRSA/
+├── src/
+│   ├── __init__.py    # Python package marker
+│   ├── keygen.py      # Generation of d0, B2, and modular constants
+│   ├── cipher.py      # Standard RSA encryption (e=65537)
+│   └── decipher.py    # Combinatorial dot product decryption
+├── requirements.txt   # Dependencies (sympy)
+├── test.py            # 1024-bit validation suite
+└── LICENSE            # MIT License terms
+
+
+---
