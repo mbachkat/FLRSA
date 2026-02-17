@@ -76,14 +76,20 @@ FLRSA/
 └── LICENSE            # MIT License terms
 ---
 
-## 💻 Installation & Usage1. Clone the repositoryBashgit clone [https://github.com/mbachkat/FLRSA.git](https://github.com/mbachkat/FLRSA.git)
+##  💻 Installation & Usage1.
+```text
+1.Clone the repositoryBashgit clone [https://github.com/mbachkat/FLRSA.git](https://github.com/mbachkat/FLRSA.git)
 cd FLRSA
 2. Install dependenciesBashpip install -r requirements.txt
 3. Run testsBashpython test.py
 
 ---
-## ⚠️ Security DisclaimerThis project is a Proof of Concept (PoC) demonstrating a novel mathematical approach to modular reduction. While the speedup is significant, the cryptographic security of using a pivot exponent $d_0$ related to combinatorial pivots has not been fully audited against lattice-based cryptanalysis (e.g., Coppersmith's attacks). Do not use this in production environments. It is intended for research and educational purposes only.
+## ⚠️ Security Disclaimer
+```text
+This project is a Proof of Concept (PoC) demonstrating a novel mathematical approach to modular reduction. While the speedup is significant, the cryptographic security of using a pivot exponent $d_0$ related to combinatorial pivots has not been fully audited against lattice-based cryptanalysis (e.g., Coppersmith's attacks). Do not use this in production environments. It is intended for research and educational purposes only.
 ---
 
-##📜 LicenseThis project is licensed under the MIT License.Copyright (c) 2026 mbachkatPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+##📜 License
+```text
+This project is licensed under the MIT License.Copyright (c) 2026 mbachkatPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 ---
