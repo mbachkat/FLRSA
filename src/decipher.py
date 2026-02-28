@@ -7,7 +7,7 @@ def decrypt_flrsa(ciphertext, priv):
     n = priv['n']
     B2 = priv['B2']
     inv6 = priv['inv6']
-    delta = priv.get('delta', 0) # Utilise 0 si delta n'est pas présent
+    delta = priv['delta']
 
     c = ciphertext
 
@@ -26,3 +26,4 @@ def decrypt_flrsa(ciphertext, priv):
     m = (m_d0 * pow(c, delta, n)) % n
    
     return m
+
