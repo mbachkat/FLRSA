@@ -32,7 +32,6 @@ def generate_flrsa_keys(bits=1024):
     e = inverse_mod(d, phi)
     
     # 5. Pré-calculs combinatoires
-    inv2 = inverse_mod(2, n)
     inv6 = inverse_mod(6, n)
     # B2,d0 = 2^d0 - 2 mod n
     b2_d0 = (pow(2, d0, n) - 2) % n
@@ -40,6 +39,6 @@ def generate_flrsa_keys(bits=1024):
     public_key = {'e': e, 'n': n}
     private_key = {
         'd0': d0, 'delta': delta, 'b2_d0': b2_d0, 
-        'inv2': inv2, 'inv6': inv6, 'n': n
+         'inv6': inv6, 'n': n
     }
     return public_key, private_key
