@@ -1,4 +1,4 @@
-# FLRSA: Fast & Light RSA
+# FLRSA: Fast & Lightweight RSA
 ### *Combinatorial Cryptography via Stirling Matrix B, Pascal Triangle P, and Summation Matrix L*
 
 **FLRSA** is an experimental asymmetric encryption algorithm. While standard RSA relies on heavy modular exponentiation ($c^d \pmod n$), FLRSA leverages the algebraic properties of the **Surjection Matrix (Matrix B)** and the **Summation Operator (Matrix L)** to decrypt messages using a lightweight **polynomial dot product**.
