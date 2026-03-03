@@ -62,11 +62,6 @@ Instead of calculating $c^d \pmod n$, which requires $O(\log d)$ modular multipl
 
 ---
 
-## ⚠️ Security Disclaimer
-This project is a **Proof of Concept (PoC)** demonstrating a novel mathematical approach to modular reduction. While the speedup is significant, the cryptographic security of using a pivot exponent $d_0$ related to combinatorial pivots has not been fully audited against lattice-based cryptanalysis (e.g., Coppersmith's attacks). **Do not use this in production environments.** It is intended for research and educational purposes only.
-
----
-
 ## 🛡️ Security Expertise & Cryptanalysis
 
 The **FLRSA** algorithm is designed with a focus on both efficiency and resilience against known cryptographic vulnerabilities. Below is an analysis of potential attack vectors and the implemented countermeasures.
