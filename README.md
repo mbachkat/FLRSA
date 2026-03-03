@@ -67,6 +67,35 @@ This project is a **Proof of Concept (PoC)** demonstrating a novel mathematical 
 
 ---
 
+## 🛡️ Security Expertise & Cryptanalysis
+
+The **FLRSA** algorithm is designed with a focus on both efficiency and resilience against known cryptographic vulnerabilities. Below is an analysis of potential attack vectors and the implemented countermeasures.
+
+---
+
+### 1. Resistance to Small Private Exponents ($d_p$, $d_q$)
+In standard RSA implementations, using small private exponents (via the Chinese Remainder Theorem) can expose the system to lattice-based attacks or timing attacks.
+
+* **Vulnerability:** Attackers may attempt to recover secret factors if $d_p$ and $d_q$ are too small.
+* **FLRSA Countermeasure:** Following the security recommendations of **David Vigilant** (*"RSA with Unknown Public Exponent"*, CT-RSA 2008), FLRSA is optimized for embedded systems where the **Public Exponent is kept unknown**. By not broadcasting the public key in sensitive environments, we significantly increase the complexity of the attack surface, preventing the mathematical shortcuts required for exponent-based recovery.
+    > Reference: [David Vigilant, Springer - CT-RSA 2008](https://link.springer.com/chapter/10.1007/978-3-540-85053-3_9)
+
+---
+
+### 2. Protection against Chosen Plaintext Attacks (CPA)
+As analyzed by **Burt Kaliski**, deterministic encryption schemes (where the same message always produces the same ciphertext) are vulnerable to dictionary attacks or plaintext analysis.
+
+* **Vulnerability:** Without randomness, an attacker can encrypt guesses of the message and compare them to the intercepted ciphertext.
+* **FLRSA Countermeasure:** To mitigate this, FLRSA supports integration with padding schemes like **RSA-OAEP** or **PKCS #1 v1.5**. 
+    * **RSA-OAEP** is the preferred method as it introduces random bits (salts) into the "message" before encryption. 
+    * Since these bits are unknown to the attacker, even identical messages will result in different ciphertexts, neutralizing the attack vector described by Kaliski.
+    * *Note:* Using FLRSA without random padding (similar to RSA-FDH) is discouraged for high-security transit.
+
+---
+
+### 3. Algebraic Optimization (Cubic Expansion)
+The recent transition to the **Cubic Formula** ($c^3 - c$) not only improves performance but also reduces the implementation footprint. By removing the need for modular inversion of 2 ($inv2$) at runtime, we reduce the risk of **Side-Channel Attacks** (SCA) related to complex modular arithmetic units in hardware.
+
 ## 📜 License
 This project is licensed under the **MIT License**. 
 
